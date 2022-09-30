@@ -8,18 +8,46 @@
             padding: 0;
             margin: 0;
         }
+
+        body {
+            background-image: url("hand-painted-watercolor-pastel-sky-background_23-2148902771.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 800px;
+            line-height: 800px;
+            text-align: center;
+        }
         canvas {
             background-color: #f0f0f0;
             display: block;
             border: 1px solid #a8a5a5;
             margin: 0 auto;
+            display: inline-block;
+            vertical-align: middle;
+            border: none;
+        }
+
+        #start {
+            position: absolute;
+            top: 350px;
+            left: 650px;
+            width: 100px;
+            height: 50px;
+            background-color: #ff6961;
+            font-family: Arial;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <canvas id="canvas" height="480" width="320"></canvas>
-    <div id="scoreboard" style="top: 0; left: 400px; position: absolute;
-color:#0095DD;font-size: 16px; font-family: Arial; ">Score: 0</div>
+    <button id="start">Start</button>
+    <canvas id="canvas" height="480" width="320" style="visibility: hidden"></canvas>
+    <div id="scoreboard" style="top: -150px; left: 720px; position: absolute;
+color:#FFC0CB;font-size: 16px; font-family: Arial;font-weight: bold;visibility: hidden">Score: 0</div>
     <script src="script.js"></script>
 </body>
 </html>
